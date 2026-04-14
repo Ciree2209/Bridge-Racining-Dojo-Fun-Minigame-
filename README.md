@@ -1,6 +1,5 @@
 # 🏎️ Bridge Racing Dojo
 
-[![Support](https://img.shields.io/badge/Support-Discord-7289DA?style=for-the-badge&logo=discord)](https://discord.gg/yourlink)
 [![Version](https://img.shields.io/badge/Version-1.0.0-orange?style=for-the-badge)](https://github.com/yourusername/bridge-racing-dojo)
 [![Tested](https://img.shields.io/badge/Tested-1.18--1.20-brightgreen?style=for-the-badge)](https://spigotmc.org)
 
