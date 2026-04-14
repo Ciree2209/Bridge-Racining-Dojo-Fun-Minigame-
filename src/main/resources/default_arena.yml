@@ -1,0 +1,18 @@
+# Inside src/main/resources/default_arena.yml
+
+# This section header MUST match the name used in BridgeRacingDojo.java:
+default_map:
+  name: DefaultBridge
+  max_players: 1
+
+  # CRITICAL: These are placeholder locations. They are Base64 encoded,
+  # but since the plugin needs to load, using an invalid placeholder is fine
+  # because the admin must set them with /dojo admin setstart anyway.
+  # These Base64 strings decode to roughly Location{world=world,x=0.0,y=100.0,z=0.0,yaw=0.0,pitch=0.0}
+  start_location: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuSW9SYXBwZXJGaWxlX2b6pE8AAAAJAAoAawByAAJMSwNnAAAAZHNyABpvcmcuYnVra2l0LnV0aWwuaW8uS2V5ZWRMb2NhCjN9sYkH2b8b9nAAAAQIAAloABXZhbHVlcH4AByQyMwByABVvcmcuYnVra2l0LlV0aWxMdS5zZXQAA20H0D0AAxIAA21zZHgAAAUAAAJkMAoAAAAAAAAAAQAAAABkMH5AACQyNAAAAB4AAwAAABQAAAQAAAQAAAAAAABhbgAAAAAAAP4AByQyNX5AACQyNgAABgAAABAAAAYAAAQAAAQAABQAAAQAAAQAAAAAAABxZAACd4AAAABh
+  finish_location: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uS2V5ZWRMb2NhCjN9sYkH2b8b9nAAAAQIAAloABXZhbHVlcH4AByQyNwByABVvcmcuYnVra2l0LlV0aWxMdS5zZXQAA20H0D0AAxIAA21zZHgAAAUAAAJoMAoAAAAAAAAAAQAAAABkMH5AACQyOAAAEAAAQAAAQAAAQAABQAAAQAAAQAAAAAAABhbgAAAAAAAP4AByQyOV5bAQQAABQAAAAAAAABf4AByQzMAAAABwAAwAAABQAAAQAAAQAAAAAAABxZAACd4AAAAA
+
+  # Ghost data is set to empty lists for the first load
+  ghost_data:
+    movements: []
+    placements: []

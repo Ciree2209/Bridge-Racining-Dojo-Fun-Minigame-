@@ -1,0 +1,32 @@
+# -------------------------------------------------------------------------
+# CORE PLUGIN METADATA - DO NOT MISSPELL OR CHANGE INDENTATION
+# -------------------------------------------------------------------------
+main: com.ciree.minigame.BridgeRacingDojo
+name: BridgeRacingDojo
+version: 1.0.0
+author: Ciree (or your name/alias)
+description: A competitive Bridging Mini-Game with Ghost Mode and persistence.
+api-version: 1.18 # Adjust this to 1.19, 1.20, etc., based on your server's version!
+
+# -------------------------------------------------------------------------
+# COMMAND REGISTRATION
+# -------------------------------------------------------------------------
+commands:
+  dojo:
+    description: Main player commands for joining, listing, and checking stats.
+    usage: /dojo <join|leave|stats|list>
+    aliases: [brd, bridgerace]
+
+  dojo admin:
+    description: Administrative commands for setting up and managing arenas.
+    usage: /dojo admin <create|delete|setstart|setfinish|setmaxplayers|save|reload>
+    permission: bridge.dojo.admin
+    permission-message: You do not have permission to use admin commands.
+
+# -------------------------------------------------------------------------
+# PERMISSIONS
+# -------------------------------------------------------------------------
+permissions:
+  bridge.dojo.admin:
+    description: Allows access to all /dojo admin setup commands.
+    default: op

@@ -1,0 +1,49 @@
+# --- Build Artifacts ---
+target/
+build/
+bin/
+*.jar
+*.war
+*.ear
+
+# --- IntelliJ IDEA ---
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# --- Eclipse ---
+.metadata/
+.classpath
+.project
+.settings/
+.cache
+.factorypath
+.springBeans
+
+# --- VS Code ---
+.vscode/
+
+# --- NetBeans ---
+nbproject/private/
+nbbuild/
+nbdist/
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Maven Wrapper ---
+.mvn/
+mvnw
+mvnw.cmd
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Misc ---
+temp/
+tmp/

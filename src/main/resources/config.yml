@@ -1,0 +1,66 @@
+# Bridge Racing Dojo Configuration File
+
+# -------------------------------------------------------------------------
+# DATABASE SETTINGS
+# -------------------------------------------------------------------------
+database:
+  enabled: false # Set to true to use MySQL, false to use YAML files
+  host: localhost
+  port: 3306
+  database: bridgeracingdojo
+  username: root
+  password: your_secure_password
+
+# -------------------------------------------------------------------------
+# GAME DEFAULTS
+# -------------------------------------------------------------------------
+race-defaults:
+  # The Y-level (height) below which a player is automatically reset to the start.
+  fall-y-level-reset: 50.0
+
+# -------------------------------------------------------------------------
+# MESSAGE CONFIGURATION
+# -------------------------------------------------------------------------
+messages:
+  prefix: "&8[&bBridgeDojo&8] &7"
+
+  # Player Feedback
+  race-joined: "&aYou have successfully joined the race on map &e%map_name%&a! Good luck!"
+  race-left: "&eYou safely left the race."
+  race-fell-reset: "&cWhoops! &7Teleporting you back to the start. Try to look up next time!"
+
+  # Finish Messages
+  race-finished: "🏁 &aYou finished in &e%time%&a! &r%rank%."
+  race-record-beat: "🎉 &6&lNEW RECORD! &aYou beat your best time on &e%map_name%&a with &e%time%&a!"
+  personal-best: "&6&l>> Personal Best: &e%time% &6&l<<"
+  personal-best-unbeaten: "&7----------" # Used if the current run is NOT a PB
+
+  # --- STATS COMMAND ADDITIONS ---
+  stats-header: "&8&m----------"
+  stats-title: "&6&l%player_name%'s Stats"
+  stats-races-completed: "&eRaces Completed: &f%count%"
+  stats-pb-title: "&b&lPersonal Bests:"
+  stats-pb-format: "&f- &a%map_name%&7: &e%time%"
+  stats-pb-none: "&7You have no recorded best times. Get racing!"
+  # --- END STATS ADDITIONS ---
+
+  # Race Errors
+  already-racing: "&cError: You are already in a race. Use /dojo leave first."
+  not-racing: "&cError: You are not currently in a race."
+  error-no-race: "&cError: You are not currently participating in any race."
+
+  # Anti-Grief Feedback
+  error-no-break: "&cYou cannot break blocks here unless they are your placed bridging blocks."
+  error-no-place: "&cYou can only place your designated bridging blocks (White Wool) while racing."
+  error-only-wool: "&cYou can only place wool blocks during the race."
+  error-only-wool-break: "&cYou can only break the wool blocks you placed."
+
+  # Command Errors and Admin Feedback
+  error-invalid-map: "&cError: Map '&e%map_name%&c' does not exist."
+  error-invalid-number: "&cError: That must be a valid whole number."
+  admin-map-incomplete: "&cError: Map '&e%map_name%&c' is incomplete. Set both Start and Finish locations."
+  admin-map-created: "&aMap &e%map_name% &a created and saved!"
+  admin-map-deleted: "&aMap &e%map_name% &a permanently deleted from the system."
+  admin-start-set: "&aStart location set for &e%map_name% &aat your current position."
+  admin-finish-set: "&aFinish location set for &e%map_name% &aat your current position."
+  admin-max-players-set: "&aMax players set to &e%max_players% &afor map &e%map_name%&a."
